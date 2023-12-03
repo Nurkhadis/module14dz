@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module14HW
 {
-    class Karta
+    class Card
     {
         public string Mast { get; set; }
         public string Tip { get; set; }
 
-        public Karta(string mast, string tip)
+        public Card(string mast, string tip)
         {
             Mast = mast;
             Tip = tip;
