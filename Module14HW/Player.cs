@@ -9,7 +9,7 @@ namespace Module14HW
     class Player
     {
         public string Name { get; }
-        public List<Karta> Cards { get; } = new List<Karta>();
+        public List<Card> Cards { get; } = new List<Card>();
 
         public Player(string name)
         {
@@ -18,7 +18,7 @@ namespace Module14HW
 
         public void DisplayCards()
         {
-            Console.WriteLine($"{Name}'s cards: {string.Join(", ", Cards.Select(karta => $"{karta.Tip} {karta.Mast}"))}");
+            Console.WriteLine($"{Name}'s cards: {string.Join(", ", Cards.Select(card => $"{card.Tip} {card.Mast}"))}");
         }
     }
 }
