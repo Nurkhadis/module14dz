@@ -9,7 +9,7 @@ namespace Module14HW
     class Game
     {
             private List<Player> players = new List<Player>();
-            private List<Karta> deck = new List<Karta>();
+            private List<Card> deck = new List<Card>();
 
             public Game(List<string> playerNames)
             {
@@ -28,7 +28,7 @@ namespace Module14HW
                 {
                     foreach (var tip in tips)
                     {
-                        deck.Add(new Karta(mast, tip));
+                        deck.Add(new Card(mast, tip));
                     }
                 }
             }
